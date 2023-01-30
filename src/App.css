@@ -1,38 +1,136 @@
-.App {
+
+*{
+  box-sizing: border-box;
+}
+
+.App{
+
+  background-image: url("https://cdnb.artstation.com/p/assets/images/images/021/500/833/large/mario-aceituno-carcasa-pokedex-completa.jpg?1571920182");
+  /* background-size:cover */
+
+
+}
+
+
+.submission{
+
+  text-align: center;
+  padding-bottom: 2%;
+  background-color: #ffffff;
+  font-size: 1.5em;
+
+  border-color: #E6E6FA;
+
+
+}
+
+.searchBar, .go{
+
+  width: 250px;
+  height: 75px;
+  border-radius: 5px;
+
+}
+
+
+
+
+.name, .height, .weight, .imageSource, .Type, .baseExp{
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.Container{
+
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 20px;
+  padding: 0.5em;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.Pokemon-Card:hover{
+
+  transform: scale(1.1);
+  transition: 0.1s;
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Star_background.svg/1200px-Star_background.svg.png");
+
+
+  background-size: 2em ,2em;
+
   }
+
+
+
+
+.Pokemon-Card{
+  min-width: 60%;
+  display: grid;
+
+  margin: 0 auto;
+  grid-gap: 10px;
+  padding: 1em;
+  border-radius: 15px;
+
+  border-width: 20rem;
+      border: 5px solid #ede618;
+
+  background-color: rgb(243, 203, 3);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
 
-.App-link {
-  color: #61dafb;
-}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  .nav{
+/* Created with https://www.css-gradient.com */
+background: #961D25;
+background: -webkit-linear-gradient(top left, #961D25, #A81934);
+background: -moz-linear-gradient(top left, #961D25, #A81934);
+background: linear-gradient(to bottom right, #961D25, #A81934);    color: antiquewhite;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    padding: 0 1rem;
+    box-shadow: 2cm;
   }
-  to {
-    transform: rotate(360deg);
+  
+  
+  .nav ul{
+  
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+  
   }
-}
+  
+   .nav li:hover{
+   color: rgb(0, 0, 0);
+   transition: 1s;
+   }
+  
+  .nav a {
+    color: inherit;
+    text-decoration: none;
+    height: 100%;
+    display: flex;
+  
+    align-items: center;
+    padding: .25rem;
+  }
+
+  .oval{
+    color: #ff0000;
+     background-color:#E6E6FA;
+    border-radius: 20px;
+  }
+  .oval:hover{
+    background-color:#e8bdf8;
+    color: #c94545;
+    /* transition: 1s; */
+  }
+
+  .meme{
+    background-color: #c94545;
+
+  }
+  
